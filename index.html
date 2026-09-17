@@ -1,0 +1,148 @@
+with open("index.html", "w") as f:
+    f.write("""<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portofolio IT - [Nama Anda]</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			/* Styling Sederhana (Bisa dimodifikasi nanti) */
+			body {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				line-height: 1.6;
+				color: #333;
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #f4f4f4;
+			}
+			header {
+				background-color: #fff;
+				padding: 30px;
+				border-radius: 8px;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			header h1 { margin: 0; color: #2c3e50; }
+			header p { color: #7f8c8d; margin-top: 5px; }
+			
+			section {
+				background-color: #fff;
+				padding: 25px;
+				border-radius: 8px;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+				margin-bottom: 20px;
+			}
+			h2 {
+				color: #2980b9;
+				border-bottom: 2px solid #ecf0f1;
+				padding-bottom: 10px;
+			}
+			
+			ul { padding-left: 20px; }
+			
+			.contact-links a {
+				display: inline-block;
+				margin: 0 10px;
+				padding: 10px 15px;
+				background-color: #2980b9;
+				color: white;
+				text-decoration: none;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+			.contact-links a:hover { background-color: #34495e; }
+            
+            .project-card {
+                border: 1px solid #ddd;
+                padding: 15px;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+            .project-card h3 { margin-top: 0; color: #2c3e50; }
+		</style>
+	</head>
+	<body>
+
+		<!-- Bagian Header (Profil Utama) -->
+		<header>
+			<h1>[Nama Lengkap Anda]</h1>
+			<p>IT Support Specialist / System Administrator / Developer (Pilih salah satu)</p>
+			
+			<div class="contact-links" style="margin-top: 20px;">
+				<!-- Ganti tautan (href) dengan akun asli Anda -->
+				<a href="mailto:emailanda@email.com">Email Saya</a>
+				<a href="https://linkedin.com/in/username-anda" target="_blank">LinkedIn</a>
+				<a href="https://github.com/username-anda" target="_blank">GitHub</a>
+			</div>
+		</header>
+
+		<!-- Bagian Tentang Saya -->
+		<section id="about">
+			<h2>Tentang Saya</h2>
+			<p>
+				Halo! Saya adalah seorang profesional IT yang memiliki ketertarikan besar pada [sebutkan minat spesifik, misalnya: infrastruktur jaringan, pengembangan aplikasi web, atau penyelesaian masalah sistem]. 
+				Dengan [X] tahun pengalaman, saya terbiasa bekerja dengan teknologi [sebutkan 2-3 teknologi utama] untuk menghadirkan solusi IT yang efisien dan andal.
+			</p>
+		</section>
+
+		<!-- Bagian Keahlian (Skills) -->
+		<section id="skills">
+			<h2>Keahlian Teknis</h2>
+			<ul>
+				<li><strong>Sistem Operasi:</strong> Windows Server, Linux (Ubuntu/CentOS), macOS</li>
+				<li><strong>Jaringan:</strong> TCP/IP, DNS, DHCP, Konfigurasi Router/Switch dasar</li>
+				<li><strong>Pemrograman & Scripting:</strong> HTML/CSS dasar, Python (dasar), Bash script</li>
+				<li><strong>Alat (Tools):</strong> Active Directory, Docker (dasar), Git, Microsoft 365 Admin Center</li>
+				<li><strong>Lainnya:</strong> Hardware troubleshooting, IT Helpdesk (Ticketing System)</li>
+			</ul>
+			<p><em>*Catatan: Ubah daftar di atas sesuai dengan kemampuan asli Anda.</em></p>
+		</section>
+
+		<!-- Bagian Pengalaman Kerja -->
+		<section id="experience">
+			<h2>Pengalaman Kerja</h2>
+			
+			<div>
+				<h3>[Nama Posisi/Jabatan IT] - [Nama Perusahaan]</h3>
+				<p><em>[Bulan, Tahun] – [Sekarang/Bulan, Tahun]</em></p>
+				<ul>
+					<li>Menangani dan menyelesaikan keluhan IT (*troubleshooting*) dari [jumlah] karyawan secara harian.</li>
+					<li>Melakukan konfigurasi jaringan dasar dan *maintenance* perangkat keras (*hardware*).</li>
+					<li>Mengelola akun *user* menggunakan Active Directory dan Microsoft 365.</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<!-- Bagian Portofolio/Proyek -->
+		<section id="portfolio">
+			<h2>Proyek & Pencapaian</h2>
+			
+			<div class="project-card">
+				<h3>Otomatisasi Laporan dengan Python (Contoh)</h3>
+				<p>Membuat *script* Python sederhana untuk mengumpulkan log *error* dari sistem harian, menghemat waktu evaluasi manual hingga 2 jam setiap minggu.</p>
+			</div>
+
+			<div class="project-card">
+				<h3>Pembuatan Website CV Menggunakan GitHub Pages</h3>
+				<p>Membuat dan meng-*hosting* website portofolio statis menggunakan HTML, CSS, dan Git.</p>
+				<p><a href="https://github.com/username-anda/username-anda.github.io" target="_blank">Lihat Kode Sumber</a></p>
+			</div>
+			
+		</section>
+
+		<!-- Bagian Edukasi -->
+		<section id="education">
+			<h2>Pendidikan</h2>
+			<ul>
+				<li><strong>[Gelar, misal: S1 Teknik Informatika]</strong> - [Nama Universitas/Institusi] ([Tahun Masuk] - [Tahun Lulus])</li>
+				<li><strong>Sertifikasi:</strong> [Misal: CompTIA A+, Cisco CCNA, atau sertifikasi lain jika ada]</li>
+			</ul>
+		</section>
+
+	</body>
+</html>
+""")
+print("index.html created successfully")
