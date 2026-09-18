@@ -1,12 +1,10 @@
-with open("index.html", "w") as f:
-    f.write("""<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Portofolio IT - [Tri Pujiyanto]</title>
+		<title>Portofolio IT - Tri Pujiyanto</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<style>
-			/* Styling Sederhana (Bisa dimodifikasi nanti) */
 			body {
 				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 				line-height: 1.6;
@@ -24,6 +22,16 @@ with open("index.html", "w") as f:
 				margin-bottom: 20px;
 				text-align: center;
 			}
+			
+			.profile-img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				object-fit: cover;
+				border: 4px solid #2980b9;
+				margin-bottom: 15px;
+			}
+
 			header h1 { margin: 0; color: #2c3e50; }
 			header p { color: #7f8c8d; margin-top: 5px; }
 			
@@ -42,9 +50,15 @@ with open("index.html", "w") as f:
 			
 			ul { padding-left: 20px; }
 			
+			.contact-info {
+				margin-top: 15px;
+				font-size: 0.9em;
+				color: #555;
+			}
+			
 			.contact-links a {
 				display: inline-block;
-				margin: 0 10px;
+				margin: 10px 5px;
 				padding: 10px 15px;
 				background-color: #2980b9;
 				color: white;
@@ -61,88 +75,127 @@ with open("index.html", "w") as f:
                 margin-bottom: 15px;
             }
             .project-card h3 { margin-top: 0; color: #2c3e50; }
+            .skill-tags { margin-top: 10px; }
+            .skill-tag {
+                display: inline-block;
+                background-color: #ecf0f1;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin: 2px;
+                font-size: 0.85em;
+                color: #2c3e50;
+            }
 		</style>
 	</head>
 	<body>
 
-		<!-- Bagian Header (Profil Utama) -->
 		<header>
-			<h1>[TRI PUJIYANTO]</h1>
-			<p>IT Support Specialist 
+			<!-- Pastikan Anda mengunggah foto Anda ke GitHub dengan nama 'foto-profil.jpg' -->
+			<img src="foto-profil.jpg" alt="Tri Pujiyanto" class="profile-img">
 			
-			<div class="contact-links" style="margin-top: 20px;">
-				<!-- Ganti tautan (href) dengan akun asli Anda -->
-				<a href="mailto:pujiyanto.try@gmail.com">Email Saya</a>
-				<a href="https://linkedin.com/in/username-anda" target="_blank">LinkedIn</a>
-				<a href="https://github.com/username-anda" target="_blank">GitHub</a>
+			<h1>Tri Pujiyanto</h1>
+			<p>IT Support Specialist</p>
+			
+			<div class="contact-info">
+				<p>📍 Jl. Puri III Blok B13 No.48 RT 001/07, KutaJaya, PasarKemis, Tangerang Banten 15560</p>
+				<p>📞 085890142086 | ✉️ Pujiyanto.try@gmail.com</p>
+			</div>
+			
+			<div class="contact-links">
+				<a href="mailto:Pujiyanto.try@gmail.com">Email Saya</a>
+				<!-- Tambahkan link LinkedIn/GitHub Anda di sini jika ada -->
 			</div>
 		</header>
 
-		<!-- Bagian Tentang Saya -->
 		<section id="about">
-			<h2>Tentang Saya</h2>
+			<h2>Profil Profesional</h2>
 			<p>
-				Halo! Saya adalah seorang profesional IT yang memiliki ketertarikan besar pada [sebutkan minat spesifik, misalnya: infrastruktur jaringan, pengembangan aplikasi web, atau penyelesaian masalah sistem]. 
-				Dengan [X] tahun pengalaman, saya terbiasa bekerja dengan teknologi [sebutkan 2-3 teknologi utama] untuk menghadirkan solusi IT yang efisien dan andal.
+				Saya adalah lulusan sarjana Sistem Informatika dan memiliki pengalaman bekerja sebagai IT Support selama 11 tahun. Saya memiliki kemampuan komunikasi lisan dan verbal yang baik, serta mampu memaparkan isu-isu yang kompleks dalam istilah yang mudah dipahami. Saya juga memiliki kemampuan <em>problem solving</em> keseharian yang kuat dalam menunjang dan mendukung operasional perusahaan.
 			</p>
 		</section>
 
-		<!-- Bagian Keahlian (Skills) -->
 		<section id="skills">
-			<h2>Keahlian Teknis</h2>
-			<ul>
-				<li><strong>Sistem Operasi:</strong> Windows Server, Linux , macOS</li>
-				<li><strong>Jaringan:</strong> TCP/IP, DNS, DHCP, Konfigurasi Firewall/Router/Switch/Access Point </li>
-				<li><strong>Pemrograman & Scripting:</strong> HTML/CSS dasar, Python (dasar), Bash script</li>
-				<li><strong>Alat (Tools):</strong> Active Directory, Microsoft 365 Admin Center, Veam Backup, Acronis Cyber Protec</li>
-				<li><strong>Lainnya:</strong> Hardware troubleshooting, IT Helpdesk (Ticketing System)</li>
-			</ul>
-			<p><em></em></p>
+			<h2>Keahlian (Skills)</h2>
+			<div class="skill-tags">
+				<span class="skill-tag">Networking</span>
+				<span class="skill-tag">MS Office</span>
+				<span class="skill-tag">Windows / Mac OS</span>
+				<span class="skill-tag">Fortinet</span>
+				<span class="skill-tag">Zoho Platform</span>
+				<span class="skill-tag">Mikrotik</span>
+				<span class="skill-tag">VOIP / IPPBX / PABX</span>
+				<span class="skill-tag">Unify</span>
+				<span class="skill-tag">Ubiquity</span>
+				<span class="skill-tag">CCTV</span>
+				<span class="skill-tag">Ruckus</span>
+				<span class="skill-tag">PC / Laptop Support</span>
+				<span class="skill-tag">Active Directory</span>
+				<span class="skill-tag">Problem Solving</span>
+				<span class="skill-tag">Google Admin</span>
+				<span class="skill-tag">Asset Management</span>
+				<span class="skill-tag">Atlassian Platform</span>
+				<span class="skill-tag">Bahasa Inggris (English)</span>
+			</div>
 		</section>
 
-		<!-- Bagian Pengalaman Kerja -->
 		<section id="experience">
 			<h2>Pengalaman Kerja</h2>
 			
-			<div>
-				<h3>[Nama Posisi/Jabatan IT] - [Nama Perusahaan]</h3>
-				<p><em>[Bulan, Tahun] – [Sekarang/Bulan, Tahun]</em></p>
+			<div class="project-card">
+				<h3>IT Support - PT. Acommerce Solusi Lestari</h3>
+				<p><em>2016 – 2023 | Sahid Sudirman Center, Jakarta</em></p>
 				<ul>
-					<li>Menangani dan menyelesaikan keluhan IT (*troubleshooting*) dari [jumlah] karyawan secara harian.</li>
-					<li>Melakukan konfigurasi jaringan dasar dan *maintenance* perangkat keras (*hardware*).</li>
-					<li>Mengelola akun *user* menggunakan Active Directory dan Microsoft 365.</li>
+					<li>Melakukan instalasi dan pemeliharaan lingkungan operasi (<em>operating environments</em>).</li>
+					<li>Memantau dan memastikan lingkungan operasi tetap aman (Firewall, AP utilize, Antivirus, dll).</li>
+					<li>Merespons dan menyelesaikan masalah IT secara efektif dan cepat.</li>
+					<li>Melakukan pembaruan (<em>update</em>) pada perangkat lunak dan perangkat keras jika diperlukan.</li>
+				</ul>
+				<strong>Pencapaian:</strong>
+				<ul>
+					<li>Berhasil menyelesaikan migrasi data perusahaan dari server lokal ke <em>cloud storage</em>.</li>
+					<li>Berhasil menyelesaikan proyek migrasi antivirus Windows Endpoint Protection Security ke Sentinel One System Protection and Security.</li>
+					<li>Berhasil melakukan <em>deploying</em> GCWP (Google Credential Windows Password).</li>
 				</ul>
 			</div>
 
+			<div class="project-card">
+				<h3>IT Support - PT Synergy Information System (Penempatan: PT. Ceva Logistik)</h3>
+				<p><em>2012 – 2016 | Sahid Sudirman Centre, Jakarta</em></p>
+				<ul>
+					<li>Memberikan dukungan teknis (<em>technical support</em>) kepada pengguna.</li>
+					<li>Mendiagnosis dan menyelesaikan masalah teknis (PC, Networking, Windows, Linux, Ip Phone, Mikrotik).</li>
+					<li>Mengidentifikasi dan melakukan eskalasi masalah serta mengelola tiket eskalasi.</li>
+					<li>Mencatat semua interaksi <em>helpdesk</em> dan menyiapkan aktivitas.</li>
+					<li>Melakukan instalasi, pengaturan, konfigurasi, dan pemeliharaan sistem.</li>
+				</ul>
+				<strong>Pencapaian:</strong>
+				<ul>
+					<li>Berhasil menyelesaikan proyek migrasi sistem operasi dari Win XP ke Win 7 di seluruh <em>site</em> pada tahun 2014.</li>
+					<li>Berhasil menyelesaikan proyek migrasi antivirus dari Microsoft Forefront Client Security (MFCS) ke System Center Endpoint Protection (SCEP) untuk Win XP ke Win 7 di seluruh <em>site</em> pada tahun 2016.</li>
+					<li>Berhasil menyelesaikan proyek relokasi kantor dari gedung Summitmas ke gedung Sahid Sudirman Centre pada 2 Mei 2016.</li>
+				</ul>
+			</div>
 		</section>
 
-		<!-- Bagian Portofolio/Proyek -->
-		<section id="portfolio">
-			<h2>Proyek & Pencapaian</h2>
-			
-			<div class="project-card">
-				<h3>Otomatisasi Laporan dengan Python (Contoh)</h3>
-				<p>Membuat *script* Python sederhana untuk mengumpulkan log *error* dari sistem harian, menghemat waktu evaluasi manual hingga 2 jam setiap minggu.</p>
-			</div>
-
-			<div class="project-card">
-				<h3>Pembuatan Website CV Menggunakan GitHub Pages</h3>
-				<p>Membuat dan meng-*hosting* website portofolio statis menggunakan HTML, CSS, dan Git.</p>
-				<p><a href="https://github.com/username-anda/username-anda.github.io" target="_blank">Lihat Kode Sumber</a></p>
-			</div>
-			
-		</section>
-
-		<!-- Bagian Edukasi -->
 		<section id="education">
 			<h2>Pendidikan</h2>
 			<ul>
-				<li><strong>[Gelar, misal: S1 Teknik Informatika]</strong> - [Nama Universitas/Institusi] ([Tahun Masuk] - [Tahun Lulus])</li>
-				<li><strong>Sertifikasi:</strong> [Misal: CompTIA A+, Cisco CCNA, atau sertifikasi lain jika ada]</li>
+				<li><strong>S1 Sistem Informasi</strong> - STMIK Swadharma (2005 – 2009)</li>
+				<li><strong>SMK</strong> - SMK Tanjung Priok Jakarta Utara (1997 – 2000)</li>
+				<li><strong>SLTP</strong> - SLTP Negri 53 Jakarta Utara (1994 – 1997)</li>
+				<li><strong>SD</strong> - SDN Semper Barat 10 Jakarta Utara (1988 – 1994)</li>
+			</ul>
+		</section>
+
+		<section id="certifications">
+			<h2>Sertifikasi & Kursus</h2>
+			<ul>
+				<li><strong>Kursus Cyber Security Untuk Pemula</strong> - Udemy (Juli 2024)</li>
+				<li><strong>Sertifikasi Cisco CCNA 200-301 Enterprise</strong> - Udemy (April 2024)</li>
+				<li><strong>ITIL Foundation Certification Training Course</strong> - Udemy (April 2024)</li>
+				<li><strong>Cisco CCNA 200-301</strong> - Udemy (April 2024)</li>
 			</ul>
 		</section>
 
 	</body>
 </html>
-""")
-print("index.html created successfully")
